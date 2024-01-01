@@ -260,7 +260,7 @@ function computeDialogPosition(tgInstance: TourGuideClient) {
  * @private
  */
 function arrowStyles(
-	arrowMiddlewareData: MiddlewareData["arrow"],
+	arrowMiddlewareData: NonNullable<MiddlewareData["arrow"]>,
 	placement: Placement,
 	dialog: TourGuideClient["dialog"]
 ): object {
