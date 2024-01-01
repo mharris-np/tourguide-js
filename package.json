@@ -1,6 +1,6 @@
 {
 	"name": "@mharris-np/tourguidejs",
-	"version": "0.0.11.5",
+	"version": "0.0.11.6",
 	"description": "A customizable tour guide library for front-end applications.",
 	"homepage": "https://tourguidejs.com",
 	"main": "dist/tour.js",
