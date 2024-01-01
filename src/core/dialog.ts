@@ -260,10 +260,15 @@ function computeDialogPosition(tgInstance: TourGuideClient) {
  * @private
  */
 function arrowStyles(
-	arrowMiddlewareData: NonNullable<MiddlewareData["arrow"]>,
+	arrowMiddlewareData: MiddlewareData["arrow"],
 	placement: Placement,
 	dialog: TourGuideClient["dialog"]
 ): object {
+
+	if (!arrowMiddlewareData) {
+		throw new Error("arrowMiddlewareData is required")
+	}
+	
 	const arrowX = arrowMiddlewareData!.x || 0
 	const arrowY = arrowMiddlewareData!.y || 0
 	const arrowSize = 10
