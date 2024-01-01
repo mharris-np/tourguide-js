@@ -264,13 +264,14 @@ function arrowStyles(
 	placement: Placement,
 	dialog: TourGuideClient["dialog"]
 ): object {
+	let arrowX = 0
+	let arrowY = 0
 
-	if (!arrowMiddlewareData) {
-		throw new Error("arrowMiddlewareData is required")
+	if (arrowMiddlewareData) {
+		arrowX = arrowMiddlewareData.x
+		arrowY = arrowMiddlewareData.y
 	}
-	
-	const arrowX = arrowMiddlewareData!.x || 0
-	const arrowY = arrowMiddlewareData!.y || 0
+
 	const arrowSize = 10
 
 	const staticSide = {
