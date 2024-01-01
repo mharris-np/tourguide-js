@@ -264,8 +264,8 @@ function arrowStyles(
 	placement: Placement,
 	dialog: TourGuideClient["dialog"]
 ): object {
-	const arrowX = arrowMiddlewareData.x || 0
-	const arrowY = arrowMiddlewareData.y || 0
+	const arrowX = arrowMiddlewareData!.x || 0
+	const arrowY = arrowMiddlewareData!.y || 0
 	const arrowSize = 10
 
 	const staticSide = {
