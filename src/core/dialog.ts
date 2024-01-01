@@ -238,7 +238,7 @@ function computeDialogPosition(tgInstance : TourGuideClient) {
  * @param dialog
  * @private
  */
-function arrowStyles(arrowMiddlewareData: MiddlewareData["arrow"], placement: Placement, dialog: TourGuideClient["dialog"]) : object {
+function arrowStyles(arrowMiddlewareData: MiddlewareData["arrow"] | undefined, placement: Placement, dialog: TourGuideClient["dialog"]) : object {
     const arrowX = arrowMiddlewareData.x || 0;
     const arrowY = arrowMiddlewareData.y || 0;
     const arrowSize = 10;
